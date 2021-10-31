@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display : flex;
+    position :sticky;
+    align-items : center;
+    justify-content : center;
+    cursor: pointer;
+    top : 0;
+
+}
+ .nav-list {
+    display : flex;
+    width : 50%;
+    list-style: none;
+    align-items: center;
+    
+}
+.nav-list li {
+    font-size: 20px;
+    font-family:'Ubuntu', sans-serif;
+    padding : 26px 34px;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color : white;
+    
+}
+.nav-list a:hover {
+    color : red;
+}
+
+.navsearch {
+    
+    width : 50%;
+    text-align: right;
+    padding : 0px 23px;
+}
+.navsearch input {
+    padding : 8px;
+    border-radius: 7px;
+    border : none;
+
+}
+
+.burger {
+    position: absolute;
+    cursor : pointer;
+    right: 5%;
+    top : 15px;
+    display : none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin : 5px 3px;
+    
+}
+.logo {
+    padding: 5px 28px;
+}
+.logo img{
+    border : 2px solid white;
+    border-radius: 50px;
+    height : 50px;
+}
+.background {
+    background : rgb(0,0,0,0.8) url(../img/bg.jpg);
+    background-size : cover;
+    background-blend-mode: darken;
+
+}
+.firstsection {
+    height: 100vh;
+}
+.box-main {
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    height : 50%;
+    margin: auto;
+}
+.firsthalf {
+    width: 80%;
+    display: flex;
+    flex-direction : column;
+    
+}
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 83px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 41px;
+}
+.text-small{
+    font-size:20px;
+}
+.btn{
+    border-radius: 10px;
+    padding: 7px 8px;
+    background: none;
+    color: white;
+    border-color: lavenderblush;
+    margin : 7px 0px;
+    cursor : pointer;
+    font-family: ubuntu, monospace;
+    font-size: 20px;
+
+}
+.btn-sm{
+    padding: 3px 4px;
+    font-size: 12px;
+}
+.buttons a {
+    text-decoration: none;
+    color : white;
+    
+}
+.btn-dark {
+    color: black;
+    border: 2px solid grey;
+
+}
+
+.section {
+ height: 500px;
+ display: flex;
+ width : 80%;
+ margin: auto;
+ align-items: center;
+ font-family: 'Ubuntu', sans-serif;
+ 
+}
+.subteg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px 0px;
+}
+.left {
+    flex-direction: row-reverse;
+   }
+.paras {
+    padding : 0px 65px;
+}
+.thumbnail img {
+    width : 250px;
+    border : 2px solid black;
+    margin-top: 19px;
+    border-radius : 26px;
+}
+.contact {
+    background-color: rgb(245, 245, 245);
+    height: 833px;
+}
+.form {
+    width: 1200px;
+    margin : 25px auto;
+}
+.form-input {
+    box-sizing: border-box;
+    width : 100%;
+    font-size : 19px;
+    border : 2px solid grey;    
+    border-radius : 6px;
+    margin : 14px 0px;
+    padding : 5px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-center {
+    text-align: center;
+    padding-top : 20px;
+    font-size : 35px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-footer {
+    text-align: center;
+    padding : 10px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background: black;
+    color : white;
+
+}
+@media only screen and (max-width : 1350px){
+    .section {
+        flex-direction: column;
+        height : auto;
+    }
+    
+}
+
+@media only screen and (max-width : 1180px){
+    .firstsection{
+        height : auto;
+        text-align: center;
+    }
+    .box-main{
+        flex-wrap: wrap-reverse;
+    }
+    .form {
+        width :auto;
+    }
+    .form-input{
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width : 937px){
+    .paras{
+        padding: 0px;
+    }
+    .box-main{
+        width: 80%;
+    }
+    .navbar{
+        flex-direction : column;
+        position: static;
+        height : 450px;
+        transition: all 0.7s ease-out;
+    }
+    .nav-list{
+        flex-direction: column;
+        width : auto;
+    }
+    .navsearch{
+        text-align: center;
+        width: auto;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height:72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    
+    
+}
